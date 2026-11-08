@@ -1,12 +1,14 @@
-//Write a program to convert temperature from Celsius to Fahrenheit
+//Write a program to calculate the area and circumference of a circle given its radius.
 #include <stdio.h>
 int main()
 {
-    float celsius, fahrenheit;
-    
-    printf("Enter temp is celsius:");
-    scanf("%f",&celsius);
-    fahrenheit=(celsius* 9.0/5.0)+32; 
-    printf("The temp in Fahrenheit is:%.2f\n",fahrenheit);
-    return 0;   
+    float radius,area,circumference;
+    printf("The radius of circle is:");
+    scanf("%f",&radius);
+    area = 3.14 * radius * radius;
+    circumference = 2 * 3.14 * radius;
+    printf("The area of circle is: %.2f\n",area);
+    printf("The circumference of circle is: %.2f\n",circumference);
+    return 0;
+
 }
